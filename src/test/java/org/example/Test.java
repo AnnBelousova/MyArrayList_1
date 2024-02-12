@@ -9,7 +9,7 @@ public class Test {
     @org.junit.jupiter.api.Test
     public void testGetReturnException() {
         MyArrayList<Integer> myArrayList = new MyArrayList<>();
-        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> myArrayList.get(0));
+        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> myArrayList.get(-1));
     }
 
     @org.junit.jupiter.api.Test
